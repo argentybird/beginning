@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<title>iRock - всякая хрень про Rock</title>
+		<script type="text/javascript">
+	function touchRock () {
+		var userName = prompt ("Kaк вас зовут?", "Введите ваше имя.");
+	
+		if (userName) {
+			alert ("Рад вас видеть, " + userName + ".");
+			document.getElementById("rockImg").src = "rock_happy.png";
+	}
+}
+
+</script>
+	</head>
+		<body onload="alert('Hello, I am your pet rock');">
+			<div style="margin-top:lOOpx; text-align:center">
+				<img id="rockImg" src="rock.png" alt="iRock" style="cursor:pointer" onclick="touchRock()" />
+			</div>
+		</body>
+</html>
